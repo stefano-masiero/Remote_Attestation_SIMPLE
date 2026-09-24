@@ -1,0 +1,8 @@
+{
+  "targets": {
+    "192.168.4.1:8080": {
+      "last_counter": 0,
+      "profiles": {}
+    }
+  }
+}

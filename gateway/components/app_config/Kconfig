@@ -1,0 +1,36 @@
+menu "Application Configuration"
+
+config APP_WIFI_SSID
+    string "Wi-Fi AP SSID"
+    default "RemoteAttestationAP"
+
+config APP_WIFI_PASSWORD
+    string "Wi-Fi AP Password"
+    default "12345678"
+
+config APP_TCP_PORT
+    int "TCP server port"
+    default 8080
+    range 1 65535
+
+config APP_UART_PORT_NUM
+    int "UART port number"
+    default 2
+    range 0 2
+
+config APP_UART_TX_PIN
+    int "UART TX GPIO"
+    default 17
+    range -1 48
+
+config APP_UART_RX_PIN
+    int "UART RX GPIO"
+    default 16
+    range -1 48
+
+config APP_UART_BAUD_RATE
+    int "UART baud rate"
+    default 115200
+    range 1200 5000000
+
+endmenu
